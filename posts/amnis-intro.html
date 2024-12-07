@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Are Data Streaming Platforms Ready for a Mission-Critical World? - Monzurul's Blog</title>
+        <link rel="stylesheet" href="../assets/css/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="nav-container">
+            <nav>
+                <div class="nav-name">Monzurul Amin</div>
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="nav-links">
+                    <a href="../index.html#about">About</a>
+                    <a href="../index.html#research">Research</a>
+                    <a href="../index.html#publications">Publications</a>
+                    <a href="../index.html#education">Education</a>
+                    <a href="../index.html#experience">Experience</a>
+                    <a href="../index.html#projects">Projects</a>
+                    <a href="../index.html#skills">Skills</a>
+                    <a href="../blog.html">Blog</a>
+                </div>
+            </nav>
+        </div>
+
+        <article class="blog-post-page">
+            <header class="blog-post-header">
+                <h1>Are Data Streaming Platforms Ready for a Mission-Critical World?</h1>
+                <div class="blog-post-meta">
+                    <span>April 17, 2024</span>
+                    <span>•</span>
+                    <span>Research Insights</span>
+                </div>
+            </header>
+
+            <div class="blog-post-content">
+                <img src="../assets/images/scenario-overview_page-0001.jpg" alt="Data Streaming in Mission-Critical Environments" class="blog-post-feature-image">
+                <!-- <div class="image-attribution">
+                    Image source: our paper.
+                </div> -->
+                
+                <section class="blog-post-section">
+                    <p>
+                        Data streaming platforms are the backbone of real-time communication, enabling systems to process and relay information quickly. They're widely used in industries like healthcare, finance, and transportation. But what about environments where lives are on the line or failure isn't an option? These mission-critical scenarios—like military operations or disaster recovery—pose unique challenges:
+                    </p>
+                    <ul>
+                        <li><strong>Low bandwidth:</strong> Think satellite networks with limited data rates.</li>
+                        <li><strong>High latency:</strong> Communication delays can mean life or death.</li>
+                        <li><strong>Frequent disconnections:</strong> Teams and systems moving in and out of network coverage.</li>
+                    </ul>
+                </section>
+
+                <section class="blog-post-section">
+                    <h2>The Study</h2>
+                    <p>
+                        This research pits Apache Kafka and RabbitMQ against these harsh realities. The test environment mimics a military coordination scenario, complete with:
+                    </p>
+                    <ul>
+                        <li>Battle units exchanging data over constrained networks.</li>
+                        <li>Simulated disconnections to measure how well systems recover.</li>
+                        <li>Metrics like latency, data loss, and bandwidth consumption.</li>
+                    </ul>
+                </section>
+
+                <section class="blog-post-section">
+                    <h2>Surprising Findings</h2>
+                    <ul>
+                        <li><strong>Bandwidth Efficiency:</strong> Kafka's ability to compress data gives it a major edge, using up to 13x less bandwidth than RabbitMQ.</li>
+                        <li><strong>Reliability Under Pressure:</strong> Both platforms struggled with message loss during network partitions, but Kafka's design made it slightly more robust.</li>
+                        <li><strong>Latency Challenges:</strong> High-latency networks significantly impacted performance, with RabbitMQ showing higher delays due to its acknowledgment mechanism.</li>
+                    </ul>
+                </section>
+
+                <section class="blog-post-section">
+                    <h2>What Needs to Change?</h2>
+                    <p>While these platforms are impressive, they're not quite there yet for mission-critical tasks. The paper suggests:</p>
+                    <ul>
+                        <li><strong>Automatic Tuning:</strong> Smarter tools to optimize configurations for different conditions.</li>
+                        <li><strong>Stronger Testing Frameworks:</strong> Systems need rigorous testing for edge cases.</li>
+                        <li><strong>Better Security Defaults:</strong> Many platforms require manual setup to enable critical security features like encryption.</li>
+                    </ul>
+                </section>
+
+                <section class="blog-post-section">
+                    <h2>Why It Matters</h2>
+                    <p>
+                        The world is moving toward more interconnected, automated systems—whether it's autonomous vehicles or disaster-response robots. Data streaming platforms are a key part of that evolution. Improving their performance in extreme scenarios could open doors to safer, smarter technology deployments.
+                    </p>
+                </section>
+
+                <section class="blog-post-section">
+                    <h2>The Takeaway</h2>
+                    <p>
+                        If you're building or working with data-intensive systems, this study is a wake-up call. It's a reminder that "reliable" in a normal setup doesn't always mean "reliable" when things get tough.
+                    </p>
+                    <p>
+                        Curious to learn more? Check out the full study: <a href="https://www.techrxiv.org/doi/full/10.36227/techrxiv.171340979.91183191" target="_blank" rel="noopener noreferrer"><em>Are Data Streaming Platforms Ready for a Mission-Critical World?</em></a>.
+                    </p>
+                </section>
+            </div>
+        </article>
+    </body>
+</html>
